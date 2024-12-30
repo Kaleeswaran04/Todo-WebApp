@@ -1,5 +1,4 @@
 let clearButton;
-let confetti = false 
 
 function add() {
     const task = document.getElementById("taskText");
