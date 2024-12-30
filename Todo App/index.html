@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <div>
+                <h2>To-Do List</h2>
+                <div class="bar">
+                    <div class="progress"></div> 
+                </div>
+            </div>   
+       
+            <div class="stat"></div>
+        </div>
+        <div id="line"></div>
+        <div class="input">
+            <input id="taskText" type="text" placeholder=" Add your task" writingsuggestions="true">
+            <button type="submit" onclick="add()"><i class="fa-solid fa-plus"></i></button>
+        </div>
+
+        <div id="task-container"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

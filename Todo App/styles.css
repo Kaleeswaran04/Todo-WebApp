@@ -1,0 +1,125 @@
+body{
+    background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+font-family: Georgia, 'Times New Roman', Times, serifs;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 120px auto 0 auto;
+    max-width: 400px;
+    border-radius: 30px;
+    border: 2px solid purple;
+}
+
+.heading{
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    width: 250px;
+    justify-content: space-evenly;
+
+}
+#line{
+    width: 300px;
+    height: 2px;
+    background-color: purple;
+}
+.bar{
+    width: 120px;
+    height: 8px;
+    background-color:white ;
+    border-radius: 10px;
+}
+.progress{
+    width: 0px;
+    height: 8px;
+    background-color:rgb(91, 52, 175) ;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.stat{
+    background-color: rgb(91, 52, 175);
+    color: white;
+    font-size: 25px;
+    width: 80px;
+    height: 80px;
+    border-radius:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input {
+    margin-top: 30px;
+}
+.input input{
+    width: 260px;
+    height: 25px; 
+    border: 1px solid rgb(91, 52, 175);
+    border-radius: 5px;
+}
+.input button{
+    height: 30px;
+    width: 30px;
+    border: 1px solid rgb(91, 52, 175);
+    color: white;
+    border-radius: 50px;
+    background-color: rgb(91, 52, 175);
+}
+.input button:hover{
+    background-color: blueviolet;
+}
+
+#clear{
+    height: 30px;
+    width: 80px;
+    border: 1px solid rgb(91, 52, 175);
+    border-radius: 50px;
+    background-color: rgb(91, 52, 175);
+    color: white;
+    margin: 10px auto;    
+}
+
+#task-container{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    min-width: 270px;
+    max-width: 270px;
+
+}
+.task{
+    border: 2px solid grey;
+    border-radius: 5px;  
+    margin-top: 5px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.btn:nth-child(1){
+    flex: 8;
+    padding-left: 5px;
+}
+
+.btn:nth-child(2), .btn:nth-child(3){
+    flex: 1;
+}
+.btn:nth-child(2), .btn:nth-child(3){
+    background: none;
+    border: none;
+}
+.check-btn{
+    color: green;
+    font-size: 20px;
+}
+.delete-btn{
+    color:rgb(217, 64, 64);
+    font-size: 20px;
+}
